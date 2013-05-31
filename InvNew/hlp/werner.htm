@@ -1,0 +1,710 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+	<head>
+		<title>Inversion is geophysical inversion software for magnetic and gravity profile 
+			data</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta name="ProgId" content="Word.Document">
+		<meta name="Generator" content="Microsoft Word 9">
+		<meta name="Originator" content="Microsoft Word 9">
+		<link rel="File-List" href="./werner_files/filelist.xml">
+			<link rel="Edit-Time-Data" href="./werner_files/editdata.mso">
+				<link rel="OLE-Object-Data" href="./werner_files/oledata.mso"> <!--[if !mso]>
+<STYLE>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</STYLE>
+<![endif]-->  <!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Igor</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Igor</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2002-12-01T15:48:00Z</o:Created>
+  <o:LastSaved>2002-12-01T15:48:00Z</o:LastSaved>
+  <o:Pages>6</o:Pages>
+  <o:Words>1071</o:Words>
+  <o:Characters>6107</o:Characters>
+  <o:Company>AG-Frisch</o:Company>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->  <!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DoNotHyphenateCaps/>
+  <w:PunctuationKerning/>
+ </w:WordDocument>
+</xml><![endif]-->
+					<style> <!-- /* Font Definitions */ @font-face {font-family:Wingdings; panose-1:5 0 0 0 0 0 0 0 0 0; mso-font-charset:2; mso-generic-font-family:auto; mso-font-pitch:variable; mso-font-signature:0 268435456 0 0 -2147483648 0;}
+	/* Style Definitions */ p.MsoNormal, li.MsoNormal, div.MsoNormal {mso-style-parent:""; margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:12.0pt; font-family:"Times New Roman"; mso-fareast-font-family:"Times New Roman";}
+	h1 {mso-style-next:Normal; margin-top:16.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; text-align:justify; line-height:150%; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:1; font-size:16.0pt; font-family:"Times New Roman"; mso-font-kerning:0pt;}
+	h2 {mso-style-next:Normal; margin-top:12.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:150%; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:2; font-size:14.0pt; font-family:"Times New Roman"; mso-ansi-language:EN-GB;}
+	h3 {mso-style-next:Normal; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:3.0cm; text-indent:0cm; line-height:150%; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:3; mso-list:l2 level3 lfo3; font-size:12.0pt; font-family:"Times New Roman";}
+	p.MsoBodyText, li.MsoBodyText, div.MsoBodyText {margin:0cm; margin-bottom:.0001pt; text-align:justify; line-height:150%; mso-pagination:widow-orphan; font-size:12.0pt; font-family:"Times New Roman"; mso-fareast-font-family:"Times New Roman";}
+	@page Section1 {size:595.3pt 841.9pt; margin:72.0pt 90.0pt 72.0pt 90.0pt; mso-header-margin:35.4pt; mso-footer-margin:35.4pt; mso-paper-source:0;}
+	div.Section1 {page:Section1;}
+	/* List Definitions */ @list l0 {mso-list-id:-5; mso-list-template-ids:-1756344474;}
+	@list l0:level1 {mso-level-text:%1; mso-level-tab-stop:21.6pt; mso-level-number-position:left; margin-left:21.6pt; text-indent:-21.6pt;}
+	@list l0:level2 {mso-level-text:"%1\.%2"; mso-level-tab-stop:28.8pt; mso-level-number-position:left; margin-left:28.8pt; text-indent:-28.8pt;}
+	@list l0:level3 {mso-level-text:"%1\.%2\.%3"; mso-level-tab-stop:36.0pt; mso-level-number-position:left; margin-left:36.0pt; text-indent:-36.0pt;}
+	@list l0:level4 {mso-level-text:"%1\.%2\.%3\.%4"; mso-level-tab-stop:43.2pt; mso-level-number-position:left; margin-left:43.2pt; text-indent:-43.2pt;}
+	@list l0:level5 {mso-level-text:"%1\.%2\.%3\.%4\.%5"; mso-level-tab-stop:50.4pt; mso-level-number-position:left; margin-left:50.4pt; text-indent:-50.4pt;}
+	@list l0:level6 {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6"; mso-level-tab-stop:57.6pt; mso-level-number-position:left; margin-left:57.6pt; text-indent:-57.6pt;}
+	@list l0:level7 {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7"; mso-level-tab-stop:64.8pt; mso-level-number-position:left; margin-left:64.8pt; text-indent:-64.8pt;}
+	@list l0:level8 {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8"; mso-level-tab-stop:72.0pt; mso-level-number-position:left; margin-left:72.0pt; text-indent:-72.0pt;}
+	@list l0:level9 {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9"; mso-level-tab-stop:79.2pt; mso-level-number-position:left; margin-left:79.2pt; text-indent:-79.2pt;}
+	@list l1 {mso-list-id:-2; mso-list-type:simple; mso-list-template-ids:-1;}
+	@list l1:level1 {mso-level-start-at:0; mso-level-text:*; mso-level-tab-stop:none; mso-level-number-position:left; margin-left:0cm; text-indent:0cm;}
+	@list l2 {mso-list-id:122386473; mso-list-type:simple; mso-list-template-ids:209465314;}
+	@list l2:level1 {mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:54.0pt; text-indent:-18.0pt;}
+	@list l3 {mso-list-id:353923431; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l3:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l4 {mso-list-id:417216862; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l4:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l5 {mso-list-id:439380395; mso-list-type:simple; mso-list-template-ids:944433422;}
+	@list l5:level1 {mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:21.0pt; text-indent:-18.0pt;}
+	@list l6 {mso-list-id:455409816; mso-list-type:simple; mso-list-template-ids:68878351;}
+	@list l6:level1 {mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt;}
+	@list l7 {mso-list-id:474681635; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l7:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l8 {mso-list-id:493642610; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l8:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l9 {mso-list-id:514004110; mso-list-type:simple; mso-list-template-ids:68878351;}
+	@list l9:level1 {mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:18.0pt; text-indent:-18.0pt;}
+	@list l10 {mso-list-id:536548531; mso-list-type:simple; mso-list-template-ids:68878351;}
+	@list l10:level1 {mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt;}
+	@list l11 {mso-list-id:567572447; mso-list-type:simple; mso-list-template-ids:68878351;}
+	@list l11:level1 {mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt;}
+	@list l12 {mso-list-id:583078171; mso-list-type:simple; mso-list-template-ids:67698703;}
+	@list l12:level1 {mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt;}
+	@list l13 {mso-list-id:602153257; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l13:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l14 {mso-list-id:625162949; mso-list-type:simple; mso-list-template-ids:944433422;}
+	@list l14:level1 {mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:18.0pt; text-indent:-18.0pt;}
+	@list l15 {mso-list-id:644047018; mso-list-type:simple; mso-list-template-ids:68878337;}
+	@list l15:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l16 {mso-list-id:706370609; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l16:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l17 {mso-list-id:786855166; mso-list-type:simple; mso-list-template-ids:68878337;}
+	@list l17:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l18 {mso-list-id:791510508; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l18:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l19 {mso-list-id:839926001; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l19:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l20 {mso-list-id:1050882976; mso-list-type:simple; mso-list-template-ids:67698703;}
+	@list l20:level1 {mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt;}
+	@list l21 {mso-list-id:1077362012; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l21:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l22 {mso-list-id:1081870902; mso-list-type:simple; mso-list-template-ids:-1290874340;}
+	@list l22:level1 {mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:54.0pt; text-indent:-18.0pt;}
+	@list l23 {mso-list-id:1199392021; mso-list-type:simple; mso-list-template-ids:-1;}
+	@list l23:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:54.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l24 {mso-list-id:1322540378; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l24:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l25 {mso-list-id:1432969049; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l25:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l26 {mso-list-id:1438674311; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l26:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l27 {mso-list-id:1816215983; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l27:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l28 {mso-list-id:1819564810; mso-list-type:simple; mso-list-template-ids:-804760606;}
+	@list l28:level1 {mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; mso-ansi-font-weight:bold;}
+	@list l29 {mso-list-id:1907495267; mso-list-type:simple; mso-list-template-ids:2097832238;}
+	@list l29:level1 {mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:18.0pt; text-indent:-18.0pt;}
+	@list l30 {mso-list-id:1935241125; mso-list-type:simple; mso-list-template-ids:68878351;}
+	@list l30:level1 {mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt;}
+	@list l31 {mso-list-id:2050766240; mso-list-type:simple; mso-list-template-ids:-24090252;}
+	@list l31:level1 {mso-level-start-at:0; mso-level-number-format:bullet; mso-level-text:\F06E; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Wingdings; mso-bidi-font-family:"Times New Roman"; color:blue;}
+	@list l32 {mso-list-id:2056812159; mso-list-type:simple; mso-list-template-ids:68878337;}
+	@list l32:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l33 {mso-list-id:2057659509; mso-list-type:simple; mso-list-template-ids:944433422;}
+	@list l33:level1 {mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:18.0pt; text-indent:-18.0pt;}
+	@list l34 {mso-list-id:2093620251; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l34:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l35 {mso-list-id:2099669657; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l35:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l36 {mso-list-id:2118480070; mso-list-type:simple; mso-list-template-ids:67698689;}
+	@list l36:level1 {mso-level-number-format:bullet; mso-level-text:\F0B7; mso-level-tab-stop:18.0pt; mso-level-number-position:left; margin-left:18.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l37 {mso-list-id:2143960253; mso-list-type:simple; mso-list-template-ids:-1549894028;}
+	@list l37:level1 {mso-level-start-at:0; mso-level-number-format:bullet; mso-level-text:-; mso-level-tab-stop:54.0pt; mso-level-number-position:left; margin-left:54.0pt; text-indent:-18.0pt; color:aqua;}
+	@list l1:level1 lfo2 {mso-level-start-at:1; mso-level-number-format:bullet; mso-level-numbering:continue; mso-level-text:\F0B7; mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:54.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l2:level1 lfo4 {mso-level-numbering:continue; mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:54.0pt; text-indent:-18.0pt;}
+	@list l22:level1 lfo6 {mso-level-numbering:continue; mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:54.0pt; text-indent:-18.0pt;}
+	@list l9:level1 lfo8 {mso-level-numbering:continue; mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:18.0pt; text-indent:-18.0pt;}
+	@list l1:level1 lfo34 {mso-level-start-at:1; mso-level-number-format:bullet; mso-level-numbering:continue; mso-level-text:\F0B7; mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:21.0pt; text-indent:-18.0pt; font-family:Symbol; mso-bidi-font-family:"Times New Roman";}
+	@list l29:level1 lfo36 {mso-level-numbering:continue; mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:18.0pt; mso-level-legacy-space:0cm; margin-left:18.0pt; text-indent:-18.0pt;}
+	ol {margin-bottom:0cm;}
+	ul {margin-bottom:0cm;}
+	--></style>
+		<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]-->  <!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+	</head>
+	<body lang="EN-US" style='tab-interval:36.0pt'>
+		<div class="Section1"><![if !supportEmptyParas]><![endif]>
+			<h1 style='LINE-HEIGHT:normal'><a name="_Toc314490346"></a><a name="_Toc314490459"></a><a name="_Toc480106846"></a><a name="_Toc480107494"></a><a name="_Toc480107723"></a><a name="_Toc480107943"></a><a name="_Toc480108080"></a><a name="_Toc480108307"></a><a name="_Toc480108398"></a><a name="_Toc480108498"></a><a name="_Toc480108647"></a><a name="_Toc480366883"></a><a name="_Toc480366946"></a><a name="_Toc480367065"></a><a name="_Toc480643091"></a><a name="_Toc480678939"><span style='mso-bookmark:_Toc480643091'><span style='mso-bookmark:_Toc480367065'><span style='mso-bookmark:_Toc480366946'><span style='mso-bookmark:_Toc480366883'><span style='mso-bookmark:_Toc480108647'><span style='mso-bookmark:_Toc480108498'><span style='mso-bookmark:_Toc480108398'><span style='mso-bookmark:_Toc480108307'><span style='mso-bookmark:_Toc480108080'><span style='mso-bookmark:_Toc480107943'><span style='mso-bookmark:_Toc480107723'><span style='mso-bookmark:_Toc480107494'><span style='mso-bookmark:_Toc480106846'><span style='mso-bookmark:_Toc314490459'><span style='mso-bookmark:_Toc314490346'><span lang="EN-GB" style='mso-ansi-language:
+EN-GB'><span style="mso-spacerun: yes">&nbsp; </span>Werner Deconvolution</span>
+																			</span>
+																		</span>
+																	</span>
+																</span>
+															</span>
+														</span>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</span>
+							</span>
+						</span>
+					</span></a><span lang="EN-GB" style='mso-ansi-language:EN-GB'><o:p></o:p>
+				</span></h1>
+			<p class="MsoBodyText" style='TEXT-INDENT:35.45pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Werner (1953), analysing the
+magnetic field of arbitrary dikes, proposed a method for it’s interpretation.
+This method deals with 2-D problems. By solving the systems of linear equations
+we can find, either, under assumption of a thin dike object from </span><span lang="EN-GB" style="FONT-FAMILY:Symbol;mso-ansi-language:EN-GB;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';mso-char-type:symbol;mso-symbol-font-family:Symbol"><span style='mso-char-type:symbol;
+mso-symbol-font-family:Symbol'>D</span>
+				</span><span lang="EN-GB" style='mso-ansi-language:EN-GB'>T curve it’s upper edge, or under assumption of
+a thick dike, from </span><span lang="EN-GB" style="FONT-FAMILY:Symbol;
+mso-ansi-language:EN-GB;
+mso-ascii-font-family:'Times New Roman';
+mso-hansi-font-family:'Times New Roman';
+mso-char-type:symbol;
+mso-symbol-font-family:Symbol"><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¶</span>
+				</span><span lang="EN-GB" style='mso-ansi-language:EN-GB'>(</span><span lang="EN-GB" style="FONT-FAMILY:Symbol;mso-ansi-language:EN-GB;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';mso-char-type:symbol;mso-symbol-font-family:Symbol"><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>D</span>
+				</span><span lang="EN-GB" style='mso-ansi-language:EN-GB'>T)/</span><span lang="EN-GB" style="FONT-FAMILY:Symbol;mso-ansi-language:EN-GB;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';mso-char-type:symbol;mso-symbol-font-family:Symbol"><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¶</span>
+				</span><span lang="EN-GB" style='mso-ansi-language:EN-GB'>x curve its upper edges. Although
+the simplification seems to be a limitation, the method does provide a wide
+range of applications. Advantages and limitations of the process of inversion
+will be discussed in this chapter.<o:p></o:p></span></p>
+			<h2 style='LINE-HEIGHT:normal'><a name="_Toc314490347"></a><a name="_Toc314490460"></a><a name="_Toc480106847"></a><a name="_Toc480107495"></a><a name="_Toc480107724"></a><a name="_Toc480107944"></a><a name="_Toc480108081"></a><a name="_Toc480108308"></a><a name="_Toc480108399"></a><a name="_Toc480108499"></a><a name="_Toc480108648"></a><a name="_Toc480366884"></a><a name="_Toc480366947"></a><a name="_Toc480367066"></a><a name="_Toc480643092"></a><a name="_Toc480678940"><span style='mso-bookmark:_Toc480643092'><span style='mso-bookmark:_Toc480367066'><span style='mso-bookmark:_Toc480366947'><span style='mso-bookmark:_Toc480366884'><span style='mso-bookmark:_Toc480108648'><span style='mso-bookmark:_Toc480108499'><span style='mso-bookmark:_Toc480108399'><span style='mso-bookmark:_Toc480108308'><span style='mso-bookmark:_Toc480108081'><span style='mso-bookmark:_Toc480107944'><span style='mso-bookmark:_Toc480107724'><span style='mso-bookmark:_Toc480107495'><span style='mso-bookmark:_Toc480106847'><span style='mso-bookmark:_Toc314490460'><span style='mso-bookmark:_Toc314490347'><span lang="EN-GB">Theory</span>
+																			</span>
+																		</span>
+																	</span>
+																</span>
+															</span>
+														</span>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</span>
+							</span>
+						</span>
+					</span></a></h2>
+			<h3 style='TEXT-INDENT:0cm;LINE-HEIGHT:normal'><a name="_Toc480106848"></a><a name="_Toc480107496"></a><a name="_Toc480107725"></a><a name="_Toc480107945"></a><a name="_Toc480108082"></a><a name="_Toc480108309"></a><a name="_Toc480108400"></a><a name="_Toc480108500"></a><a name="_Toc480108649"></a><a name="_Toc480366885"></a><a name="_Toc480366948"></a><a name="_Toc480367067"></a><a name="_Toc480643093"></a><a name="_Toc480678941"><span style='mso-bookmark:_Toc480643093'><span style='mso-bookmark:_Toc480367067'><span style='mso-bookmark:_Toc480366948'><span style='mso-bookmark:_Toc480366885'><span style='mso-bookmark:_Toc480108649'><span style='mso-bookmark:_Toc480108500'><span style='mso-bookmark:_Toc480108400'><span style='mso-bookmark:_Toc480108309'><span style='mso-bookmark:_Toc480108082'><span style='mso-bookmark:_Toc480107945'><span style='mso-bookmark:_Toc480107725'><span style='mso-bookmark:_Toc480107496'><span style='mso-bookmark:_Toc480106848'><![if !supportLists]><span lang="EN-GB" style='mso-ansi-language:EN-GB'>1.<span style="FONT:7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Thin
+dike </span></span>
+																</span>
+															</span>
+														</span>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</span>
+							</span>
+						</span>
+					</span></a><span style='mso-bookmark:_Toc480678941'><span style='mso-bookmark:_Toc480643093'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>in </span>
+					</span>
+				</span><span lang="EN-GB" style='mso-ansi-language:EN-GB'>magnetic<o:p></o:p></span></h3>
+			<p class="MsoBodyText" style='TEXT-INDENT:36pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Assuming the well-known formulae for
+magnetic scalar potential (1.1) we can derive an equation for arbitrary 2-D
+body (e.g. Talwani &amp; Heirtzer, 1964; Ku &amp; Sharp, 1983). We choose the <i>x</i>-axis
+perpendicular to the strike of the dike, the <i>y</i>-axis parallel to the
+strike, and the <i>z</i>-axis vertical. Equations for vertical, horizontal and
+total magnetic anomalies are<o:p></o:p></span></p>
+			<p class="MsoNormal" align="right" style='TEXT-INDENT:1cm;LINE-HEIGHT:150%;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shapetype 
+id=_x0000_t75 coordsize = "21600,21600" o:preferrelative = "t" o:spt = "75" 
+filled = "f" stroked = "f" path = " m@4@5 l@4@11@9@11@9@5 xe"><v:stroke 
+joinstyle = "miter"></v:stroke><v:formulas><v:f eqn = 
+"if lineDrawn pixelLineWidth 0 "></v:f><v:f eqn = "sum @0 1 0 "></v:f><v:f eqn = 
+"sum 0 0 @1 "></v:f><v:f eqn = "prod @2 1 2 "></v:f><v:f eqn = 
+"prod @3 21600 pixelWidth "></v:f><v:f eqn = 
+"prod @3 21600 pixelHeight "></v:f><v:f eqn = "sum @0 0 1 "></v:f><v:f eqn = 
+"prod @6 1 2 "></v:f><v:f eqn = "prod @7 21600 pixelWidth "></v:f><v:f eqn = 
+"sum @8 21600 0 "></v:f><v:f eqn = "prod @7 21600 pixelHeight "></v:f><v:f eqn = 
+"sum @10 21600 0 "></v:f></v:formulas><v:path o:extrusionok = "f" 
+gradientshapeok = "t" o:connecttype = "rect"></v:path><o:lock v:ext="edit" 
+aspectratio="t"></o:lock></v:shapetype><v:shape id=_x0000_i1025 
+style="WIDTH: 158.25pt; HEIGHT: 36pt" o:ole="" type = "#_x0000_t75" coordsize = 
+"21600,21600" fillcolor = "winColor(17)"><v:imagedata o:title="" src = 
+"./werner_files/image001.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="211" height="48" src="./werner_files/image002.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1100266506">
+ </o:OLEObject>
+</xml><![endif]-->, <span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;</span>(1.0)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1026 style="WIDTH: 242.25pt; HEIGHT: 38.25pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image003.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="323" height="51" src="./werner_files/image004.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1100266507">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp; </span>(1.1)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1027 style="WIDTH: 272.25pt; HEIGHT: 39.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image005.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="363" height="53" src="./werner_files/image006.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1100266508">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.2)<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>where<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='TEXT-INDENT:36pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><span style="mso-spacerun:
+yes">&nbsp;</span><b>M</b> = (<i>M<sub>x</sub></i>, <i>M<sub>z</sub></i>) is the
+magnetisation vector <b>M = M</b><sub>Remanent</sub> + <b>M</b><sub>Induced,</sub><o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:36pt;LINE-HEIGHT:normal'><i><span lang="EN-GB" style='mso-ansi-language:EN-GB'>r</span></i><span lang="EN-GB" style='mso-ansi-language:EN-GB'>=<sub><!--[if gte vml 1]><v:shape id=_x0000_i1028 
+style="WIDTH: 92.25pt; HEIGHT: 21.75pt" o:ole="" type = "#_x0000_t75" coordsize 
+= "21600,21600" fillcolor = "winColor(17)"> <v:imagedata o:title="" src = 
+"./werner_files/image007.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="123" height="29" src="./werner_files/image008.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1100266509">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Let <i>h</i> be depth of a dike, and 2<i>b</i>
+be width of a dike, and the centre of a dike (location) is located at (0, <i>h</i>).
+Under the assumption that <i>b</i>&lt;&lt;<i>h</i>, we can write<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1029 style="WIDTH: 285pt; HEIGHT: 78pt" o:ole="" type = "#_x0000_t75" 
+coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata o:title="" src 
+= "./werner_files/image009.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="380" height="104" src="./werner_files/image010.gif" v:shapes="_x0000_i1029"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1100266510">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.3)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>similarly<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><i><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></i></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1030 style="WIDTH: 134.25pt; HEIGHT: 30.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image011.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="179" height="41" src="./werner_files/image012.gif" v:shapes="_x0000_i1030"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1100266512">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.4)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>and<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1031 style="WIDTH: 278.25pt; HEIGHT: 30.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image013.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="371" height="41" src="./werner_files/image014.gif" v:shapes="_x0000_i1031"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1100266513">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.5)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>where<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><i><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape id=_x0000_i1032 
+style="WIDTH: 171.75pt; HEIGHT: 36pt" o:ole="" type = "#_x0000_t75" coordsize = 
+"21600,21600" fillcolor = "winColor(17)"><v:imagedata o:title="" src = 
+"./werner_files/image015.wmz"></v:imagedata></v:shape><![endif]--> 
+							<![if !vml]><img width="229" height="48" src="./werner_files/image016.gif" v:shapes="_x0000_i1032"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1100266514">
+ </o:OLEObject>
+</xml><![endif]--></span></i><span lang="EN-GB" style='mso-ansi-language:EN-GB'>.<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp; </span>(1.6)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='LINE-HEIGHT:normal;TEXT-ALIGN:center'><i><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></i></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal;mso-outline-level:1'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Then from above equations we can
+write<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1033 style="WIDTH: 120.75pt; HEIGHT: 68.25pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image017.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="161" height="91" src="./werner_files/image018.gif" v:shapes="_x0000_i1033"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1100266515">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.7)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>where<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1034 style="WIDTH: 75.75pt; HEIGHT: 36pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image019.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="101" height="48" src="./werner_files/image020.gif" v:shapes="_x0000_i1034"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1100266516">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.8)<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><i><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></i></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><i><span lang="EN-GB" style='mso-ansi-language:EN-GB'>I</span></i><span lang="EN-GB" style='mso-ansi-language:
+EN-GB'>&nbsp;is a magnetic inclination of the main field <b>T</b>; </span><span lang="EN-GB" style="FONT-FAMILY:Symbol;mso-ansi-language:EN-GB;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';mso-char-type:symbol;mso-symbol-font-family:Symbol"><span style='mso-char-type:symbol;
+mso-symbol-font-family:Symbol'>a</span>
+				</span><span lang="EN-GB" style='mso-ansi-language:EN-GB'> is a strike of the dike measured from the
+magnetic north, positive clockwise.<i><o:p></o:p></i></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>For an arbitrary location of the dike (<i>x<sub>0</sub></i>,<i>
+						h<sub>0</sub></i>) on a profile (<i>x</i>, 0), equation (4.5) becomes<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1035 style="WIDTH: 131.25pt; HEIGHT: 35.25pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image021.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="175" height="47" src="./werner_files/image022.gif" v:shapes="_x0000_i1035"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1100266517">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.9)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>or<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1036 style="WIDTH: 153.75pt; HEIGHT: 18.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image023.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="205" height="25" src="./werner_files/image024.gif" v:shapes="_x0000_i1036"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1100266518">
+ </o:OLEObject>
+</xml><![endif]-->.<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.10)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>This equation is referred to be a Werner
+four-point operator, and its properties will be discussed in chapter 4.1.3.<o:p></o:p></span></p>
+			<h3 style='TEXT-INDENT:0cm;LINE-HEIGHT:normal'><a name="_Toc480106849"></a><a name="_Toc480107497"></a><a name="_Toc480107726"></a><a name="_Toc480107946"></a><a name="_Toc480108083"></a><a name="_Toc480108310"></a><a name="_Toc480108401"></a><a name="_Toc480108501"></a><a name="_Toc480108650"></a><a name="_Toc480366886"></a><a name="_Toc480366949"></a><a name="_Toc480367068"></a><a name="_Toc480643094"></a><a name="_Toc480678942"><span style='mso-bookmark:_Toc480643094'><span style='mso-bookmark:_Toc480367068'><span style='mso-bookmark:_Toc480366949'><span style='mso-bookmark:_Toc480366886'><span style='mso-bookmark:_Toc480108650'><span style='mso-bookmark:_Toc480108501'><span style='mso-bookmark:_Toc480108401'><span style='mso-bookmark:_Toc480108310'><span style='mso-bookmark:_Toc480108083'><span style='mso-bookmark:_Toc480107946'><span style='mso-bookmark:_Toc480107726'><span style='mso-bookmark:_Toc480107497'><span style='mso-bookmark:_Toc480106849'><![if !supportLists]><span lang="EN-GB" style='mso-ansi-language:EN-GB'>2.<span style="FONT:7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Generalisation
+of Werner deconvolution</span></span>
+																</span>
+															</span>
+														</span>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</span>
+							</span>
+						</span>
+					</span></a><span lang="EN-GB" style='mso-ansi-language:EN-GB'><o:p></o:p>
+				</span></h3>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='TEXT-INDENT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>In this chapter brief generalisation
+of the Werner deconvolution is given. Only equations are to be written. For
+further reading see original papers.<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;TEXT-INDENT:-18pt;LINE-HEIGHT:normal;mso-list:l26 level1 lfo39;tab-stops:list 18.0pt'><![if 
+				!supportLists]><span lang="EN-GB" style='FONT-FAMILY:Symbol;mso-ansi-language:EN-GB'>·<span style="FONT:7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Magnetic<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Thin dike (Werner, 1953)<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1037 style="WIDTH: 131.25pt; HEIGHT: 35.25pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image021.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="175" height="47" src="./werner_files/image025.gif" v:shapes="_x0000_i1037"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1100266519">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>For a&nbsp;thick dike edge we can
+write (Ku &amp; Sharp, 1983):<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1038 style="WIDTH: 141.75pt; HEIGHT: 33pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image026.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="189" height="44" src="./werner_files/image027.gif" v:shapes="_x0000_i1038"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1100266520">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;TEXT-INDENT:-18pt;LINE-HEIGHT:normal;mso-list:l13 level1 lfo40;tab-stops:list 18.0pt'><![if 
+				!supportLists]><span lang="EN-GB" style='FONT-FAMILY:Symbol;mso-ansi-language:EN-GB'>·<span style="FONT:7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Gravity<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>2-D cylinder (Dobrin, 1976, in
+Kilty, 1983):<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1039 style="WIDTH: 155.25pt; HEIGHT: 33pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image028.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="207" height="44" src="./werner_files/image029.gif" v:shapes="_x0000_i1039"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1100266521">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Vertical thin dike, depth unlimited
+(Klingelé et al. 1991):<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1040 style="WIDTH: 165pt; HEIGHT: 33pt" o:ole="" type = "#_x0000_t75" 
+coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata o:title="" src 
+= "./werner_files/image030.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="220" height="44" src="./werner_files/image031.gif" v:shapes="_x0000_i1040"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1100266522">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Laterally infinite step (Klingelé et
+al. 1991):<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1041 style="WIDTH: 195pt; HEIGHT: 36pt" o:ole="" type = "#_x0000_t75" 
+coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata o:title="" src 
+= "./werner_files/image032.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="260" height="48" src="./werner_files/image033.gif" v:shapes="_x0000_i1041"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1100266523">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>The goal is that all above equations can be
+rewritten in the form of equation (4.10) and they can be solved similarly as in
+classical Werner deconvolution for unknown parameters <i>x<sub>0</sub></i>, <i>z<sub>0</sub></i>.<o:p></o:p></span></p>
+			<h3 style='TEXT-INDENT:0cm;LINE-HEIGHT:normal'><a name="_Toc314490348"></a><a name="_Toc314490461"></a><a name="_Toc480106850"></a><a name="_Toc480107498"></a><a name="_Toc480107727"></a><a name="_Toc480107947"></a><a name="_Toc480108084"></a><a name="_Toc480108311"></a><a name="_Toc480108402"></a><a name="_Toc480108502"></a><a name="_Toc480108651"></a><a name="_Toc480366887"></a><a name="_Toc480366950"></a><a name="_Toc480367069"></a><a name="_Toc480643095"></a><a name="_Toc480678943"><span style='mso-bookmark:_Toc480643095'><span style='mso-bookmark:_Toc480367069'><span style='mso-bookmark:_Toc480366950'><span style='mso-bookmark:_Toc480366887'><span style='mso-bookmark:_Toc480108651'><span style='mso-bookmark:_Toc480108502'><span style='mso-bookmark:_Toc480108402'><span style='mso-bookmark:_Toc480108311'><span style='mso-bookmark:_Toc480108084'><span style='mso-bookmark:_Toc480107947'><span style='mso-bookmark:_Toc480107727'><span style='mso-bookmark:_Toc480107498'><span style='mso-bookmark:_Toc480106850'><span style='mso-bookmark:_Toc314490461'><span style='mso-bookmark:_Toc314490348'><![if !supportLists]><span lang="EN-GB" style='mso-ansi-language:EN-GB'>3.<span style="FONT:7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Properties
+of the Werner n-point operator</span></span>
+																		</span>
+																	</span>
+																</span>
+															</span>
+														</span>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</span>
+							</span>
+						</span>
+					</span></a><span lang="EN-GB" style='mso-ansi-language:EN-GB'><o:p></o:p>
+				</span></h3>
+			<p class="MsoNormal"><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='TEXT-INDENT:36pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>In this chapter we are going to
+discuss the properties of the Werner <i>n</i>-point operator from the point of
+view of theory, where <i>n</i>-point operator means that we are solving <i>n</i>
+equations of either <i>n</i> or more unknowns. <o:p></o:p></span></p>
+			<p class="MsoBodyText" style='TEXT-INDENT:36pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Let us rewrite the interpretation
+equation (4.9) in the form<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1042 style="WIDTH: 242.25pt; HEIGHT: 18.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image034.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="323" height="25" src="./werner_files/image035.gif" v:shapes="_x0000_i1042"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1100266524">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+(1.11)<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>or in the form<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1043 style="WIDTH: 137.25pt; HEIGHT: 18.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image036.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="183" height="25" src="./werner_files/image037.gif" v:shapes="_x0000_i1043"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1100266525">
+ </o:OLEObject>
+</xml><![endif]-->.<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.12)<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>I prefer to write the interpretation equation
+in the form written above, because of clarity of the following discussion.<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='TEXT-INDENT:36pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Now let us assume Werner’s
+interference polynomial in the form<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1044 style="WIDTH: 261pt; HEIGHT: 33.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image038.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="348" height="45" src="./werner_files/image039.gif" v:shapes="_x0000_i1044"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1044"
+  DrawAspect="Content" ObjectID="_1100266526">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.13)<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>or <o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1045 style="WIDTH: 233.25pt; HEIGHT: 18.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image040.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="311" height="25" src="./werner_files/image041.gif" v:shapes="_x0000_i1045"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1045"
+  DrawAspect="Content" ObjectID="_1100266527">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.14)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>where<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1046 style="WIDTH: 156pt; HEIGHT: 228.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image042.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="208" height="305" src="./werner_files/image043.gif" v:shapes="_x0000_i1046"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1046"
+  DrawAspect="Content" ObjectID="_1100266528">
+ </o:OLEObject>
+</xml><![endif]-->.<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.15)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal;mso-outline-level:1'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>From the equations (4.15) we have <o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1047 style="WIDTH: 192.75pt; HEIGHT: 182.25pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image044.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="257" height="243" src="./werner_files/image045.gif" v:shapes="_x0000_i1047"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1100266529">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>(4.16)<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>where <b>d</b>, <b>d</b> = (<i>d</i><sub>0</sub>
+<i>d</i><sub>1</sub> <i>d</i><sub>2</sub> . . . <i>d</i><sub>n</sub>) is “solution”
+vector, <i>n</i>+1 is the number of terms on the right-hand side of the
+equation (4.14). The equation (4.16) gives solution for depth and location of
+the dike; from parameters <i>A</i> and <i>B</i> we can compute dip and
+susceptibility, and parameters of the interference polynomial <i>c</i><sub>0</sub>,&nbsp;<i>c</i><sub>1</sub>,&nbsp;<i>c</i><sub>2</sub>,&nbsp;</span><span lang="EN-GB" style="FONT-FAMILY:Symbol;mso-ansi-language:EN-GB;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';mso-char-type:symbol;mso-symbol-font-family:Symbol"><span style='mso-char-type:symbol;
+mso-symbol-font-family:Symbol'>¼</span>
+				</span><span lang="EN-GB" style='mso-ansi-language:EN-GB'>,&nbsp;<i>c</i><sub>n-2</sub>.<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>As long as we have computed parameters <i>A</i>,
+<i>B</i> we can derive susceptibility contrast and the dip of the dike.
+Recalling the equations (4.7) we have<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1048 style="WIDTH: 81pt; HEIGHT: 39.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image046.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="108" height="53" src="./werner_files/image047.gif" v:shapes="_x0000_i1048"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1048"
+  DrawAspect="Content" ObjectID="_1100266530">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.17)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1049 style="WIDTH: 89.25pt; HEIGHT: 35.25pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image048.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="119" height="47" src="./werner_files/image049.gif" v:shapes="_x0000_i1049"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1049"
+  DrawAspect="Content" ObjectID="_1100266531">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.18)<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>where <i>I</i>&nbsp;is magnetic inclination.<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='TEXT-INDENT:35.45pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Now look closer at the equations,
+and try to examine, how computed parameters affect a solution. The right-hand
+side of the equation (4.15) contains all pieces of information about the
+magnetic inclination, declination, strike, dip and susceptibility of the dike
+(parameters <i>a<sub>i</sub></i>). We can see, that changes in the parameters <i>a<sub>i</sub></i>
+of a dike, related with the right-hand side of the equation (4.15), do <b>not</b>
+in fact affect a solution for depth and position of a dike. It happens rarely,
+that we can find the exact position of a&nbsp;geological body, although we do
+not know any other parameters of a body. On the other hand, parameters <i>b<sub>i</sub></i>
+affects the solution of the inclination, strike </span><span lang="EN-GB" style="FONT-FAMILY:Symbol;mso-ansi-language:EN-GB;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';mso-char-type:symbol;mso-symbol-font-family:Symbol"><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¼</span>
+				</span><span lang="EN-GB" style='mso-ansi-language:EN-GB'> see equations (4.16). <o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;TEXT-INDENT:-18pt;LINE-HEIGHT:normal;mso-list:l15 level1 lfo24;tab-stops:list 18.0pt'><![if 
+				!supportLists]><span lang="EN-GB" style='FONT-FAMILY:Symbol;mso-ansi-language:EN-GB'>·<span style="FONT:7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang="EN-GB" style='mso-ansi-language:EN-GB'>The
+remnant magnetisation does not affect the solution for depth and position of
+the dike. <o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><b><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Proof</span></b><span lang="EN-GB" style='mso-ansi-language:EN-GB'>: Due to the superposition principle we can
+write<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1050 style="WIDTH: 225pt; HEIGHT: 33.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image050.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="300" height="45" src="./werner_files/image051.gif" v:shapes="_x0000_i1050"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050"
+  DrawAspect="Content" ObjectID="_1100266532">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+(1.20)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>where coefficients A<sub>R</sub> and
+B<sub>R</sub> are for the remnant magnetisation.<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><span style="mso-spacerun:
+yes">&nbsp;</span>Then<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1051 style="WIDTH: 336pt; HEIGHT: 20.25pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image052.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="448" height="27" src="./werner_files/image053.gif" v:shapes="_x0000_i1051"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1051"
+  DrawAspect="Content" ObjectID="_1100266533">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-tab-count:1'></span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1.21)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>and finally<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="right" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:right'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><sub><!--[if gte vml 1]><v:shape 
+id=_x0000_i1052 style="WIDTH: 137.25pt; HEIGHT: 18.75pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata 
+o:title="" src = "./werner_files/image036.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="183" height="25" src="./werner_files/image054.gif" v:shapes="_x0000_i1052"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1052"
+  DrawAspect="Content" ObjectID="_1100266534">
+ </o:OLEObject>
+</xml><![endif]-->.<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(4.22)<o:p></o:p></span></p>
+			<p class="MsoBodyText" align="center" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;TEXT-ALIGN:center'><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal;mso-outline-level:1'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>The equation (4.22) equals
+to (4.12). q.e.d.<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='MARGIN-LEFT:18pt;LINE-HEIGHT:normal'><i><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></i></p>
+			<p class="MsoBodyText" style='LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>If the induced magnetisation is known (what is
+true), we can compute remnant magnetisation.<o:p></o:p></span></p>
+			<p class="MsoBodyText" style='TEXT-INDENT:1cm;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Assume an interference of more dikes.
+If we want to get some meaningful solution, we need to add to the
+interpretation equation a function that <b>approximates</b> the field of the
+“interfered” dike <b>within the <i>k</i>-point</b> operator window. What kind
+of function are we to use? Probably it can be <b>only</b> a polynomial function
+suggested by Werner, because the rational function affects the left-hand side
+of the equation (4.14) (isn’t there plenty of choices?). The second question
+is: what kind of the polynomial degree are we going to pick? Polynomials of the
+second, third degree can good approximate an&nbsp;interfered curve only in
+surrounding parts of an anomaly. Hence, we had better seek for a solution,
+which gives a better approximation, what is the higher order polynomial. One
+could bother, that such an approximation can have large amplitudes between the
+data points, but we need a good approximation in data points. Unfortunately
+there will be numerical problems in practical computing. The system of linear
+equations will be ill conditioned; its condition number will be very high (<sub><!--[if gte vml 1]><v:shape id=_x0000_i1053 
+style="WIDTH: 80.25pt; HEIGHT: 18pt" o:ole="" type = "#_x0000_t75" coordsize = 
+"21600,21600" fillcolor = "winColor(17)"> <v:imagedata o:title="" src = 
+"./werner_files/image055.wmz"></v:imagedata></v:shape><![endif]--> 
+						<![if !vml]><img width="107" height="24" src="./werner_files/image056.gif" v:shapes="_x0000_i1053"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1053"
+  DrawAspect="Content" ObjectID="_1100266535">
+ </o:OLEObject>
+</xml><![endif]-->). Such a systems of linear equations do not have solutions
+in a sense of classical numerical analysis. One possible way is to use
+regularisation. <o:p></o:p></span></p>
+			<p class="MsoBodyText" style='TEXT-INDENT:18pt;LINE-HEIGHT:normal'><span lang="EN-GB" style='mso-ansi-language:EN-GB'>Sensitivity to the noise: Recall the
+equation (3.48) of the condition number and the chapter about SVD. From
+discussion about SVD we can see that small error either in measured data <b>b</b>
+or coefficients of the matrix <b>A</b>&nbsp;can cause unacceptable error in the
+solution. The condition numbers of the systems of linear equations solved in
+Werner deconvolution are ~10<sup>4</sup>&nbsp;–&nbsp;10<sup>30</sup> (ideal is
+1), what means that the systems are ill conditioned. For this reason small
+perturbations may cause that the solution fails. <o:p></o:p></span></p>
+			<p class="MsoNormal"><span lang="EN-GB" style='mso-ansi-language:EN-GB'><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></span></p>
+			<p class="MsoNormal"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></p>
+		</div>
+	</body>
+</html>

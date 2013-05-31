@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InvNew", "InvNew\InvNew.vcxproj", "{6968F595-0752-4266-9DBE-F1FFC17BBDCE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupInv", "SetupInv\SetupInv.vdproj", "{D486FF27-247C-4132-91F8-103EBA543AE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6968F595-0752-4266-9DBE-F1FFC17BBDCE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6968F595-0752-4266-9DBE-F1FFC17BBDCE}.Debug|Win32.Build.0 = Debug|Win32
+		{6968F595-0752-4266-9DBE-F1FFC17BBDCE}.Release|Win32.ActiveCfg = Release|Win32
+		{6968F595-0752-4266-9DBE-F1FFC17BBDCE}.Release|Win32.Build.0 = Release|Win32
+		{D486FF27-247C-4132-91F8-103EBA543AE5}.Debug|Win32.ActiveCfg = Debug
+		{D486FF27-247C-4132-91F8-103EBA543AE5}.Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

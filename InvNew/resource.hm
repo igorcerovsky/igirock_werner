@@ -1,0 +1,5 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by InvNew.rc
+//
+#define HIDC_BUT_HLP                    0x80a40410    // IDD_REGULARIZATION_DIALOG
+#define HIDC_BUT_NEXT_MIN               0x80a40400    // IDD_REGULARIZATION_DIALOG

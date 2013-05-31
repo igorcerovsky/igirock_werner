@@ -1,0 +1,920 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Slovak (Slovakia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SKY)
+LANGUAGE LANG_SLOVAK, SUBLANG_DEFAULT
+#pragma code_page(1250)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\InvNew.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_B1                  BITMAP                  "res\\HScBarAct.bmp"
+IDB_B2                  BITMAP                  "res\\HScBarPas.bmp"
+IDB_BKG                 BITMAP                  "res\\50 Francardo Cave11-9-02.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_DTB_IMPORT DIALOGEX 0, 0, 149, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,18,119,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,119,50,14
+    EDITTEXT        IDC_EDIT_NAME,73,101,69,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_CHAN,7,18,135,83,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "Item",IDC_STATIC,7,7,14,8
+    LTEXT           "Example",IDC_STATIC,44,7,28,8
+    LTEXT           "Channel Name",IDC_STATIC,94,7,48,8
+    LTEXT           "New Channel Name",IDC_STATIC,7,103,64,8
+END
+
+IDD_DLG_WERNER DIALOGEX 0, 0, 234, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Werner Deconvolution"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Profile",IDC_STATIC,7,12,20,8
+    COMBOBOX        IDC_WD_PROF,65,7,112,43,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Position Channel",IDC_STATIC,7,25,57,8
+    COMBOBOX        IDC_CHANNEL_POS,65,21,112,71,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Elevation Channel",IDC_STATIC,7,39,57,8
+    COMBOBOX        IDC_CHANNEL_ALTITUDE,65,35,112,71,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Field Channel",IDC_STATIC,7,52,44,8
+    COMBOBOX        IDC_CHANNEL_FIELD,65,49,112,74,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Solution Name",IDC_STATIC,7,68,51,9
+    EDITTEXT        IDC_SOL_NAME,65,63,112,14,ES_AUTOHSCROLL
+    GROUPBOX        "Window Width Options",IDC_STATIC,7,84,95,62
+    LTEXT           "Start",IDC_STATIC,13,100,16,8
+    EDITTEXT        IDC_WWSTART,33,95,40,14,ES_AUTOHSCROLL
+    LTEXT           "points",IDC_STATIC,79,100,20,8
+    LTEXT           "End",IDC_STATIC,13,116,16,8
+    EDITTEXT        IDC_WWEND,33,110,40,14,ES_AUTOHSCROLL
+    LTEXT           "points",IDC_STATIC,79,116,20,8
+    LTEXT           "Step",IDC_STATIC,13,129,16,8
+    EDITTEXT        IDC_WWSTEP,33,125,40,14,ES_AUTOHSCROLL
+    LTEXT           "points",IDC_STATIC,79,129,20,8
+    GROUPBOX        "Interference Polynomial",IDC_STATIC,7,153,95,46
+    LTEXT           "Start",IDC_STATIC,13,169,16,8
+    EDITTEXT        IDC_IPSTART,33,164,40,14,ES_AUTOHSCROLL
+    LTEXT           "points",IDC_STATIC,77,169,20,8
+    LTEXT           "End",IDC_STATIC,13,185,16,8
+    EDITTEXT        IDC_IPEND,33,180,40,14,ES_AUTOHSCROLL
+    LTEXT           "points",IDC_STATIC,77,185,20,8
+    GROUPBOX        "Depth Limitations",IDC_STATIC,109,153,118,46
+    LTEXT           "Max Elevation",IDC_STATIC,115,169,46,8
+    EDITTEXT        IDC_MAX_ELEV,163,164,40,14,ES_AUTOHSCROLL
+    LTEXT           "m",IDC_STATIC,213,169,8,8
+    LTEXT           "Min Elevation",IDC_STATIC,115,185,44,8
+    EDITTEXT        IDC_MIN_ELEV,163,180,40,14,ES_AUTOHSCROLL
+    LTEXT           "m",IDC_STATIC,215,185,8,8
+    PUSHBUTTON      "OK",IDOK,184,25,43,14
+    PUSHBUTTON      "Cancel",IDCANCEL,184,45,43,14
+    GROUPBOX        "Induced Field",IDC_STATIC,109,84,118,62
+    LTEXT           "Field Strength",IDC_STATIC,115,100,44,8
+    EDITTEXT        IDC_FIELDSTREN,163,95,40,14,ES_AUTOHSCROLL
+    LTEXT           "nT",IDC_STATIC,209,100,10,8
+    LTEXT           "Inclination",IDC_STATIC,115,116,33,8
+    EDITTEXT        IDC_INLC,163,110,40,14,ES_AUTOHSCROLL
+    LTEXT           "deg",IDC_STATIC,209,116,13,8
+    LTEXT           "Declination",IDC_STATIC,115,129,36,8
+    EDITTEXT        IDC_DECL,163,125,40,14,ES_AUTOHSCROLL
+    LTEXT           "deg",IDC_STATIC,209,129,13,8
+END
+
+IDD_DLG_SETRANGE DIALOGEX 0, 0, 117, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Range"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,48,37,14
+    PUSHBUTTON      "Cancel",IDCANCEL,58,48,37,14
+    LTEXT           "min",IDC_STATIC,7,11,12,8
+    LTEXT           "max",IDC_STATIC,7,27,14,8
+    EDITTEXT        IDC_EDIT_MIN,43,7,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAX,43,25,52,14,ES_AUTOHSCROLL
+END
+
+IDD_DLG_CLUSTERING DIALOGEX 0, 0, 353, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Clustering"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,339,118
+    GROUPBOX        "Clustering type",IDC_STATIC,7,130,66,53
+    CONTROL         "Normal",IDC_RADIO_CLUST,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,20,144,38,10
+    CONTROL         "Power",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,163,38,10
+    GROUPBOX        "Options",IDC_STATIC,78,130,95,53
+    LTEXT           "treshold",IDC_STATIC,85,143,27,8
+    EDITTEXT        IDC_EDIT_TRESH,114,140,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_TRESH,"msctls_updown32",UDS_AUTOBUDDY | UDS_ARROWKEYS,154,140,9,14
+    LTEXT           "radius",IDC_STATIC,85,163,20,8
+    EDITTEXT        IDC_EDIT_RADIUS,114,160,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Method Info",IDC_STATIC,178,130,168,78
+    LTEXT           "Slution name",IDC_STR_SOLNAME,188,142,42,8
+    LTEXT           "Profile chan1 chan2 chan3",IDC_STR_PROFILE,188,158,85,8
+    LTEXT           "Winwow width",IDC_STR_WW,188,174,47,8
+    LTEXT           "Interference polynomial",IDC_STR_IP,188,190,77,8
+    DEFPUSHBUTTON   "Compute",IDC_BUTTON_COMPUTE,7,194,50,14
+    PUSHBUTTON      "OK",IDOK,65,194,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,123,194,50,14
+END
+
+IDD_DLG_CLUSTRING_SMALL DIALOGEX 0, 0, 103, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Clustering"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Type",IDC_STATIC,9,81,81,24
+    CONTROL         "Normal",IDC_RADIO_CLUST,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,91,36,10
+    CONTROL         "Power",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,53,91,33,10
+    GROUPBOX        "Options",IDC_STATIC,7,4,82,57
+    LTEXT           "treshold",IDC_STATIC,15,15,27,8
+    EDITTEXT        IDC_EDIT_TRESH,43,12,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_TRESH,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,83,17,11,14
+    LTEXT           "radius",IDC_STATIC,13,30,20,8
+    EDITTEXT        IDC_EDIT_RADIUS,43,27,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Compute",IDC_BUTTON_COMPUTE,9,63,38,12
+    PUSHBUTTON      "Close",IDOK,55,63,35,12
+    LTEXT           "exp",IDC_STATIC,15,46,13,8
+    EDITTEXT        IDC_EDIT_EXP,43,42,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_EXP,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,83,42,11,14
+END
+
+IDD_DLG_SELCHAN DIALOGEX 0, 0, 162, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select channels for drawing"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,69,57,50,14
+    LTEXT           "position",IDC_STATIC,7,11,31,8
+    COMBOBOX        IDC_CHAN_POS,43,7,112,71,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "elevation",IDC_STATIC,7,24,31,8
+    COMBOBOX        IDC_CHAN_ELEV,43,21,112,71,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "field",IDC_STATIC,7,38,31,8
+    COMBOBOX        IDC_CHAN_FLD,43,35,112,71,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_METHOD_EDIT DIALOGEX 0, 0, 233, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit methods"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_METH,7,7,135,176,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Show Methods",IDC_STATIC,147,7,79,40
+    CONTROL         "Current Profile",IDC_RADIO_SHOW_PROF,"Button",BS_AUTORADIOBUTTON | WS_GROUP,151,17,63,10
+    CONTROL         "All Profiles",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,151,30,49,10
+    PUSHBUTTON      "Show / Hide",IDC_BUT_SHOW,148,65,78,14
+    PUSHBUTTON      "Delete",IDC_BUT_DEL,148,82,78,14
+    PUSHBUTTON      "Properties",IDC_BUT_PROP,148,98,78,14
+    PUSHBUTTON      "Rem. hidden solutions",IDC_BUT_REMHID,148,114,78,14
+    DEFPUSHBUTTON   "Close",IDOK,160,169,50,14
+    PUSHBUTTON      "Set as current",IDC_BUT_METHCUR,148,49,78,14
+    PUSHBUTTON      "Export",IDC_BUT_EXPORT,148,130,78,14
+END
+
+IDD_DLG_METHOD_PROPERTIES DIALOGEX 0, 0, 162, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Method Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Profile",IDC_STATIC,7,9,21,8
+    EDITTEXT        IDC_EDIT_PROF,41,7,115,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Type",IDC_STATIC,7,24,17,8
+    EDITTEXT        IDC_EDIT_TYPE,41,21,115,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ID",IDC_STATIC,7,39,8,8
+    EDITTEXT        IDC_EDIT_ID,41,35,115,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Name",IDC_STATIC,7,54,19,8
+    EDITTEXT        IDC_EDIT_NAME,41,49,115,14,ES_AUTOHSCROLL
+    LTEXT           "Sol num.",IDC_STATIC,7,69,28,8
+    EDITTEXT        IDC_EDIT_NUMSOL,41,63,115,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Ip",IDC_STATIC,7,84,8,8
+    EDITTEXT        IDC_EDIT_IP,41,77,115,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Ww",IDC_STATIC,7,99,13,8
+    EDITTEXT        IDC_EDIT_WW,41,91,115,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Color",IDC_BUT_COLOR,7,117,37,14
+    DEFPUSHBUTTON   "OK",IDOK,61,117,37,14
+    PUSHBUTTON      "Cancel",IDCANCEL,119,117,37,14
+END
+
+IDD_REGULARIZATION_DIALOG DIALOGEX 0, 0, 289, 292
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Regularized Derivative"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Profile",IDC_BUT_INPORT,"Button",BS_OWNERDRAW | WS_TABSTOP,7,11,48,14
+    CONTROL         "Regularize",IDC_BUT_REGULARIZE,"Button",BS_OWNERDRAW | WS_TABSTOP,7,26,48,14
+    CONTROL         "Set Data",IDC_BUT_SETDATA,"Button",BS_OWNERDRAW | WS_TABSTOP,7,41,48,14
+    CONTROL         "Close",IDC_CLOSE,"Button",BS_OWNERDRAW | WS_TABSTOP,7,56,48,14
+    GROUPBOX        "Regularizotion Parameter",IDC_STATIC,58,7,102,64
+    LTEXT           "min",IDC_STATIC,64,25,12,8
+    EDITTEXT        IDC_EDIT_RP_MIN,82,20,40,14,ES_AUTOHSCROLL
+    CONTROL         "default",IDC_BUT_DEFAULT,"Button",BS_OWNERDRAW | WS_TABSTOP,126,20,31,14
+    LTEXT           "max",IDC_STATIC,64,38,14,8
+    EDITTEXT        IDC_EDIT_RP_MAX,82,36,40,14,ES_AUTOHSCROLL
+    CONTROL         "<-",IDC_BUT_PREV_MIN,"Button",BS_OWNERDRAW | WS_TABSTOP,126,36,31,14
+    LTEXT           "q",IDC_STATIC,64,53,12,8
+    EDITTEXT        IDC_EDIT_RP_Q,82,52,40,14,ES_AUTOHSCROLL
+    CONTROL         "->",IDC_BUT_NEXT_MIN,"Button",BS_OWNERDRAW | WS_TABSTOP,126,52,31,14,0,HIDC_BUT_NEXT_MIN
+    GROUPBOX        "Compute",IDC_STATIC,166,7,51,64
+    GROUPBOX        "Show",IDC_STATIC,220,7,61,64
+    CONTROL         "dz",IDC_RADIO_REGTAG,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,172,16,23,10
+    CONTROL         "dx",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,172,28,23,10
+    CONTROL         "field cont",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,172,40,43,10
+    EDITTEXT        IDC_EDIT_FLD_CONT,172,52,40,14,ES_AUTOHSCROLL
+    CONTROL         "data",IDC_CHECK_DATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,226,18,30,10
+    CONTROL         "regularized",IDC_CHECK_RGLRZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,226,30,50,10
+    CONTROL         "! regularized",IDC_CHECK_FFT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,226,42,54,10
+    CONTROL         "spectrum",IDC_CHECK_SPEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,226,54,45,10
+    LTEXT           "Output:",IDC_STATIC,64,74,26,8
+    CONTROL         "Normal",IDC_RADIO_OUT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,97,73,38,10
+    CONTROL         "Regularized",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,134,73,51,10
+    CONTROL         "Help",IDC_BUT_HLP,"Button",BS_OWNERDRAW | WS_TABSTOP,189,73,41,11,0,HIDC_BUT_HLP
+    CONTROL         "Cancel",IDC_CANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,240,73,41,11
+END
+
+IDD_DLG_SETPROFCHAN DIALOGEX 0, 0, 186, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select profile and channel for computing"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,58,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,121,40,50,14
+    COMBOBOX        IDC_COMBO_PROF,36,7,143,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Profile",IDC_STATIC,7,9,21,8
+    LTEXT           "Channel",IDC_STATIC,7,26,27,8
+    COMBOBOX        IDC_COMBO_CHAN,36,21,143,84,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_FILTER_RESULTS DIALOGEX 0, 0, 247, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,129,137,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,190,137,50,14
+    GROUPBOX        "Widow Width",IDC_STATIC,6,4,125,71
+    LTEXT           "Start",IDC_STATIC,14,20,16,8
+    EDITTEXT        IDC_EDIT_WW_START,60,14,40,14,ES_AUTOHSCROLL
+    LTEXT           "[points]",IDC_STATIC,102,20,24,8
+    LTEXT           "End",IDC_STATIC,14,33,14,8
+    EDITTEXT        IDC_EDIT_WW_END,60,28,40,14,ES_AUTOHSCROLL
+    LTEXT           "[points]",IDC_STATIC,102,33,24,8
+    LTEXT           "Start Position",IDC_STATIC,14,49,42,8
+    EDITTEXT        IDC_EDIT_WW_STARTPOS,60,42,40,14,ES_AUTOHSCROLL
+    LTEXT           "[m]",IDC_STATIC,102,49,10,8
+    LTEXT           "End Position",IDC_STATIC,14,62,40,8
+    EDITTEXT        IDC_EDIT_WW_ENDPOS,60,56,40,14,ES_AUTOHSCROLL
+    LTEXT           "[m]",IDC_STATIC,102,62,10,8
+    GROUPBOX        "Altitude [m]",IDC_STATIC,135,4,101,34
+    LTEXT           "Minimum",IDC_STATIC,141,12,28,8
+    EDITTEXT        IDC_EDIT_ALTITUDE_MIN,141,21,40,14,ES_AUTOHSCROLL
+    LTEXT           "Maximum",IDC_STATIC,189,12,30,8
+    EDITTEXT        IDC_EDIT_ALTITUDE_MAX,189,21,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Interference Polynomial",IDC_STATIC,135,42,101,34
+    LTEXT           "Start",IDC_STATIC,142,50,16,8
+    LTEXT           "End",IDC_STATIC,190,50,14,8
+    EDITTEXT        IDC_EDIT_IP_START,142,59,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_IP_END,190,59,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Structural Index",IDC_STATIC_SI,136,76,101,34,WS_DISABLED
+    LTEXT           "Start",IDC_STATIC_SI_START,143,84,16,8,WS_DISABLED
+    LTEXT           "End",IDC_STATIC_SI_END,191,84,14,8,WS_DISABLED
+    EDITTEXT        IDC_EDIT_SI_START,143,93,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_SI_END,191,93,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Cond Num <",IDC_STATIC,12,84,40,8
+    EDITTEXT        IDC_EDIT_CONDNUM,56,80,75,14,ES_AUTOHSCROLL
+    LTEXT           "Chi Square <",IDC_STATIC,12,98,42,8
+    EDITTEXT        IDC_EDIT_CHISQ,56,95,75,14,ES_AUTOHSCROLL
+    GROUPBOX        "Filter results",IDC_STATIC,6,112,125,23
+    CONTROL         "All",IDC_RADIO_ALL,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,121,23,10
+    CONTROL         "Selected Results",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,57,121,69,10
+    DEFPUSHBUTTON   "Apply",IDC_BUTTON_APPLY,7,137,50,14
+    PUSHBUTTON      "Default",IDC_BUTTON_DEFAULT,68,137,50,14
+    PUSHBUTTON      "Show All",IDC_SHOW_ALL,161,116,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DLG_DTB_IMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_DLG_WERNER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DLG_SETRANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_DLG_CLUSTERING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DLG_CLUSTRING_SMALL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_DLG_SELCHAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_DLG_METHOD_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_DLG_METHOD_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_REGULARIZATION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_SETPROFCHAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DLG_FILTER_RESULTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HSCROLL      CURSOR                  "res\\cursor_hrz.cur"
+IDC_CURSOR_VSCROLL      CURSOR                  "res\\cursor_vrt.cur"
+IDC_CURSOR_REGPAR       CURSOR                  "res\\cursor1.cur"
+#endif    // Slovak (Slovakia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 234, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About InvNew"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "InvNew Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,97,160,50,16,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\InvNew.ico"
+IDR_InversionTYPE       ICON                    "res\\InvNewDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_VIEW_ZOOM_IN
+    BUTTON      ID_VIEW_ZOOM_OUT
+    BUTTON      ID_VIEW_ZOOM
+    BUTTON      ID_VIEW_ZOOM_PAGE
+    SEPARATOR
+    BUTTON      ID_VIEW_REDRAW
+    SEPARATOR
+    BUTTON      ID_METHOD_WERNER
+    BUTTON      ID_METHOD_CLUSTERING
+    BUTTON      ID_EDIT_METHOD
+    SEPARATOR
+    BUTTON      ID_EDIT_REMOVEHIDEN
+    BUTTON      ID_EDIT_DELETE_METHOD
+    SEPARATOR
+    BUTTON      ID_DATABASE_PROFILE_FIRST
+    BUTTON      ID_DATABASE_PROFILE_LAST
+    BUTTON      ID_DATABASE_PROFILE_PREV
+    BUTTON      ID_DATABASE_PROFILE_NEXT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About InvNew...",            ID_APP_ABOUT
+    END
+END
+
+IDR_InversionTYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Method",                      ID_EDIT_METHOD
+        MENUITEM SEPARATOR
+        MENUITEM "Remove Hiden Solutions",      ID_EDIT_REMOVEHIDEN
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Fit to Page",                 ID_VIEW_ZOOM_PAGE, GRAYED
+        MENUITEM "Zoom",                        ID_VIEW_ZOOM, GRAYED
+        MENUITEM "Zoom In",                     ID_VIEW_ZOOM_IN, GRAYED
+        MENUITEM "Zoom Out",                    ID_VIEW_ZOOM_OUT, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Redraw",                      ID_VIEW_REDRAW
+        MENUITEM "Set Channels",                ID_VIEW_SETCHANNELS
+    END
+    POPUP "Database"
+    BEGIN
+        MENUITEM "Import",                      ID_DATABASE_IMPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Compute",                     ID_DATABASE_COMPUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Next Profile",                ID_DATABASE_PROFILE_NEXT
+        MENUITEM "PrevProfile",                 ID_DATABASE_PROFILE_PREV
+        MENUITEM "Fisrt Profile",               ID_DATABASE_PROFILE_FIRST
+        MENUITEM "Last Profile",                ID_DATABASE_PROFILE_LAST
+    END
+    POPUP "Method"
+    BEGIN
+        MENUITEM "Werner",                      ID_METHOD_WERNER
+        MENUITEM SEPARATOR
+        MENUITEM "Clustering",                  ID_METHOD_CLUSTERING
+        MENUITEM "Filter Results",              ID_METHOD_FILTER_RESULTS
+        MENUITEM SEPARATOR
+        MENUITEM "Export",                      ID_METHOD_EXPORT
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About InvNew...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "InvNew.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "InvNew.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    ID_INDICATOR_X          "-----------------------------"
+    ID_INDICATOR_Z          "-----------------------------"
+    ID_INDICATOR_COMPUTE    "Coputation Progress"
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    ID_INDICATOR_PROFILE    "Current Profile "
+    ID_INDICATOR_METHOD     "Current Method"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Inversion"
+    IDR_InversionTYPE       "\nInversion\nInversion\nInversion Files (*.inv)\n.inv\nInversion.Document\nInversion.Document"
+    ID_METHOD_WERNER        "Werner decomvolution\nWerner deconvolution"
+    ID_VIEW_ZOOM_PAGE       "Resize to data extend\nResize to data extend"
+    ID_VIEW_ZOOM            "Zoom\nZoom"
+    ID_VIEW_ZOOM_IN         "Zoom In\nZoom In"
+    ID_VIEW_ZOOM_OUT        "Zoom Out\nZoom Out"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "InvNew"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_METHOD_CLUSTERING    "Clustering\nClustering"
+    ID_VIEW_REDRAW          "Redraw\nRedraw"
+    ID_VIEW_SETCHANNELS     "Set Channels for drawing\n Set channels"
+    ID_EDIT_METHOD          "Edit Methods\nEdit Methods"
+    ID_EDIT_REMOVEHIDEN     "Remove hidden solutions\nRemove hidden solutions"
+    ID_EDIT_DELETE_METHOD   "Delete Method\nDelete method"
+    ID_METHOD_EXPORT        "Export Results\nExport results"
+    ID_DATABASE_PROFILE_NEXT "Next Profile\n Next profile"
+    ID_DATABASE_PROFILE_PREV "Previous profile\n Previous  profile"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DATABASE_PROFILE_FIRST "Jump toirst profile in database\nFirst profile"
+    ID_DATABASE_PROFILE_LAST "Jump to last profile in database\n Last profile"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\InvNew.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

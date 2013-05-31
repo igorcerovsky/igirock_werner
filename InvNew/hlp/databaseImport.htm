@@ -1,0 +1,57 @@
+<HTML>
+	<HEAD>
+		<TITLE></TITLE>
+		<META NAME="GENERATOR" Content="Microsoft Visual Studio 7.0">
+	</HEAD>
+	<BODY>
+		<P>
+			<FORM>
+				<P><STRONG>&nbsp;Import data file format.</STRONG></P>
+		</P>
+		<P>Database data to import are text files *.xyz (extension *.xyz is not necessary). 
+			The format of the file follows:</P>
+		<P>Keywods:<BR>
+			&nbsp;&nbsp;&nbsp; <FONT color="#990000">// </FONT><FONT color="#000000">- </FONT>
+			<FONT color="#000000">tag denotes comment, once this tag appears on a&nbsp;line, 
+				the line is ignored<BR>
+				&nbsp;&nbsp;&nbsp; </FONT><FONT color="#990000"><EM>profile [number]</EM></FONT><FONT color="#000000">
+				- starts the profile data&nbsp;section. from the&nbsp;next line in file data 
+				reading starts. <FONT color="#990000"><EM>[number]</EM></FONT></FONT><FONT color="#000000">
+				is your profile number.</FONT></FONT></P>
+		<P>Fist data column are fiduacials. This column is inevitable. One more field 
+			data&nbsp;column is inevitable. Next columns are optional. After the data 
+			section can follow next profile.</P>
+		<P>Follows an example of file.</P>
+		</FORM>
+		<P>*******************************<BR>
+			// deriv dx dz
+			<BR>
+			profile 1
+			<BR>
+			0.0 -72.6&nbsp;&nbsp;&nbsp; -73.2369&nbsp; -97.4279
+			<BR>
+			0.2 -121.7&nbsp; -20.1339&nbsp; -63.9342
+			<BR>
+			0.4 -161.9&nbsp; -40.2916&nbsp; -81.1438
+			<BR>
+			0.6 -201.3&nbsp; -24.592&nbsp;&nbsp;&nbsp;&nbsp;-90.1137
+			<BR>
+			...<BR>
+			...<BR>
+			...<BR>
+			profile 2&nbsp;&nbsp;
+			<BR>
+			0.0 -72.6&nbsp;&nbsp;&nbsp; -73.2369&nbsp; -97.4279
+			<BR>
+			0.2 -121.7&nbsp; -20.1339&nbsp; -63.9342
+			<BR>
+			0.4 -161.9&nbsp; -40.2916&nbsp; -81.1438
+			<BR>
+			0.6 -201.3&nbsp; -24.592&nbsp;&nbsp;&nbsp;&nbsp;-90.1137
+			<BR>
+			...<BR>
+			*******************************<BR>
+		</P>
+		<P>&nbsp;</P>
+	</BODY>
+</HTML>
